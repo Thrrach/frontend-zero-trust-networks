@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7f8; color: #102a43; }
+.shell { min-height: 100vh; background: linear-gradient(135deg, #f7fbfb, #eef4f7); }
+header { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 5vw; background: #082f2e; color: #d9f99d; }
+.brand { font-size: 18px; font-weight: 700; } header span { color: #cbd5e1; }
+main { width: min(1280px, 100%); margin: 0 auto; padding: 48px 24px; }
+.dashboard-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr); gap: 24px; align-items: start; }
+.section-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.section-heading h2 { margin-top: 0; margin-bottom: 4px; } .trust-card { margin-top: 16px; } .api-alert { margin-bottom: 16px; } .form-note { font-size: 12px; margin-top: 16px; }
+@media (max-width: 900px) { .dashboard-grid { grid-template-columns: 1fr; } }
+@media (max-width: 576px) { header { padding: 0 18px; } header span { display: none; } main { padding: 28px 16px; } }
